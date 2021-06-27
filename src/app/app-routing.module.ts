@@ -6,11 +6,6 @@ const routes: Routes = [
   { path: '', component: LayoutComponent, children: [
     {
       path: '',
-      redirectTo: 'search-dni',
-      pathMatch: 'full'
-    },
-    {
-      path: 'search-dni',
       loadChildren: () => import('./features/citizens/citizens.module').then((m) => m.CitizensModule),
     },
   ] },
