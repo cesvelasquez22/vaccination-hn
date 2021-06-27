@@ -1,0 +1,25 @@
+<div class="background">
+    <div class="title-background">
+        <h1>Agenda tu cita para ser vacunado en contra del Covid 19</h1>
+    </div>
+</div>
+
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>Búsqueda</mat-card-title>
+        <mat-card-subtitle>Ingrese su DNI a continuación</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <mat-form-field>
+            <input [placeholder]="'Su identidad'" matInput [formControl]="searchDni" [autocomplete]="'off'">
+            <mat-error *ngIf="searchDni.hasError('required')">
+                La identidad es requerida
+            </mat-error>
+        </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-raised-button [color]="'primary'">Verificar</button>
+    </mat-card-actions>
+</mat-card>
