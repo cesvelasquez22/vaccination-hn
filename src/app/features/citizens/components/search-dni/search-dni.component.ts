@@ -39,7 +39,7 @@ export class SearchDniComponent implements OnInit, OnDestroy {
         .pipe(takeUntil(this.unsubscribe$))
         .subscribe((data) => {
           if (data.length > 0) {
-            this.router.navigate(['shortcuts'])
+            this.router.navigate(['dashboard'])
           } else {
             this._snackBar.open('Ciudadano NO existe!', 'Aceptar', { duration: 5000 });
           }

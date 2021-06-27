@@ -1,0 +1,50 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard - Accesos directos</h1>
+  <mat-grid-list cols="3" rowHeight="10rem">
+    <mat-grid-tile [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Agendar cita
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Registra tu cita llenando un formulario con tus datos personales</div>
+        </mat-card-content>
+        <mat-card-actions class="dashboard-card-actions">
+          <button mat-raised-button [color]="'primary'">Agendar nueva cita</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Ver detalle de la Cita
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Puedes comprobar la información de tu cita en cualquier momento</div>
+        </mat-card-content>
+        <mat-card-actions class="dashboard-card-actions">
+          <button mat-raised-button [color]="'primary'">Ver información</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Cambiar cita
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Solicita cambio en el horario de tu cita</div>
+        </mat-card-content>
+        <mat-card-actions class="dashboard-card-actions">
+          <button mat-raised-button [color]="'primary'">Cambiar cita</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

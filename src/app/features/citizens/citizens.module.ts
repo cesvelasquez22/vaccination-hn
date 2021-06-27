@@ -12,14 +12,18 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { ShortcutsComponent } from './components/shortcuts/shortcuts.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
   declarations: [
     SearchDniComponent,
     CitationDetailComponent,
-    ShortcutsComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +35,10 @@ import { ShortcutsComponent } from './components/shortcuts/shortcuts.component';
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatIconModule,
+    LayoutModule,
 
   ],
   providers: [CitizensService],
