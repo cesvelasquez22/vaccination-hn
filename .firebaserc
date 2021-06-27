@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "vaccination-citations": {
+      "hosting": {
+        "vaccination-hn": [
+          "vaccination-citations"
+        ]
+      }
+    }
+  }
+}
